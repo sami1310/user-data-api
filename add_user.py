@@ -38,8 +38,7 @@ def add_user():
 
     return jsonify(
         {
-            "message": f"User {username} added to Firestore!"
-            f"User {username} added to Firestore! Total users: {user_count["count"]}"
+            "message": f"User {username} added to Firestore! Total users: {user_count["count"]}"
         }
     )
 
