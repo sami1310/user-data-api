@@ -37,8 +37,14 @@ def add_user():
         user_count_ref.set(user_count)
 
     return jsonify(
-        {f'User {username} added to Firestore! Total users: {user_count["count"]}'}
+        {
+            "message": f"User {username} added to Firestore!"
+            f"User {username} added to Firestore! Total users: {user_count["count"]}"
+        }
     )
+
+
+# Total users: {user_count["count"]}
 
 
 # Flask route to add a user to Firestore and update total count
